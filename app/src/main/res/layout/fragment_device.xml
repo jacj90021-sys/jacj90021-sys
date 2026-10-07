@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:tag="layout/fragment_device_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_large" android:paddingEnd="@dimen/margin_large">
+        <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:layout_gravity="end" android:id="@id/action_restore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Restore" style="?borderlessButtonStyle" />
+            <Button android:layout_gravity="end" android:id="@id/action_random" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/action_reset" style="?borderlessButtonStyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/fingerprint" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="end" android:orientation="horizontal" android:id="@id/propertiesMenu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <Button android:layout_gravity="center_vertical" android:id="@id/action_save" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save" style="?borderlessButtonStyle" />
+            <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <Button android:layout_gravity="end|center" android:id="@id/action_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reset" style="?borderlessButtonStyle" />
+            <androidx.appcompat.widget.SwitchCompat android:layout_gravity="end|center" android:id="@id/edit" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Edit" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/properties" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:layout_gravity="center_horizontal" android:tag="binding_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" app:counterEnabled="false" app:helperTextEnabled="true" style="?textInputOutlinedExposedDropdownMenuStyle">
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView android:entries="@array/enable_popups" android:id="@id/props" android:tag="binding_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_gravity="center_horizontal" android:tag="binding_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:hint="PRODUCT" app:counterEnabled="false" app:helperTextEnabled="true" style="?textInputOutlinedExposedDropdownMenuStyle">
+                <AutoCompleteTextView android:tag="binding_6" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_gravity="center_horizontal" android:tag="binding_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:hint="BRAND" app:counterEnabled="false" app:helperTextEnabled="true" style="?textInputOutlinedExposedDropdownMenuStyle">
+                <AutoCompleteTextView android:tag="binding_8" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_gravity="center_horizontal" android:tag="binding_9" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:hint="MODEL" app:counterEnabled="false" app:helperTextEnabled="true" style="?textInputOutlinedExposedDropdownMenuStyle">
+                <AutoCompleteTextView android:tag="binding_10" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_gravity="center_horizontal" android:tag="binding_11" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_small" android:hint="DEVICE" app:counterEnabled="false" app:helperTextEnabled="true" style="?textInputOutlinedExposedDropdownMenuStyle">
+                <AutoCompleteTextView android:tag="binding_12" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

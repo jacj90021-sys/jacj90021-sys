@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="?dialogPreferredPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?dialogPreferredPadding" android:paddingEnd="?dialogPreferredPadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textfield.TextInputLayout android:id="@id/text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:hint="@string/action_note">
+        <com.google.android.material.textfield.TextInputEditText android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+</FrameLayout>

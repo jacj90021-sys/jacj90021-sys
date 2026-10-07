@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.cardview.widget.CardView android:id="@id/bannerHolder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="1.0dip" />
+        <FrameLayout android:id="@id/fl_search_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip">
+            <EditText android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/et_search_simple" android:background="@drawable/bg_search_round" android:layout_width="fill_parent" android:layout_height="48.0dip" android:hint="Search App/Space" android:maxLines="1" android:inputType="text" android:imeOptions="actionSearch" android:paddingStart="52.0dip" android:paddingEnd="40.0dip" />
+            <ImageView android:layout_gravity="start|center" android:id="@id/iv_search_go" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dip" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="40.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_search" />
+            <ImageView android:layout_gravity="end|center" android:id="@id/iv_clear_search" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dip" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="40.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_cancel" />
+        </FrameLayout>
+        <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/viewLoading" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.core.widget.ContentLoadingProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.AppCompat.ProgressBar" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/margin_small" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom" android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="32.0dip" android:src="@drawable/baseline_add_24" app:fabSize="normal" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

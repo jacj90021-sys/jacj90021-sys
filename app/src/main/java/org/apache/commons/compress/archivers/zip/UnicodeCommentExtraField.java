@@ -1,0 +1,23 @@
+package org.apache.commons.compress.archivers.zip;
+
+/* compiled from: r8-map-id-b6a76c1f47a189ff549f65e3bd043bd70b1794641f7a8effd31f0ac437af7687 */
+/* loaded from: classes.dex */
+public class UnicodeCommentExtraField extends AbstractUnicodeExtraField {
+    public static final ZipShort UCOM_ID = new ZipShort(25461);
+
+    public UnicodeCommentExtraField() {
+    }
+
+    @Override // org.apache.commons.compress.archivers.zip.ZipExtraField
+    public ZipShort getHeaderId() {
+        return UCOM_ID;
+    }
+
+    public UnicodeCommentExtraField(String str, byte[] bArr, int i, int i2) {
+        super(str, bArr, i, i2);
+    }
+
+    public UnicodeCommentExtraField(String str, byte[] bArr) {
+        super(str, bArr);
+    }
+}

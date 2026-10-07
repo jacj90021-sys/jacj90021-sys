@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/action_create_shortcut" android:id="@id/action_create_shortcut" android:visible="false" android:orderInCategory="100" android:title="@string/action_create_shortcut" />
+    <item android:icon="@drawable/privacy" android:id="@id/action_icon_fake" android:visible="false" android:orderInCategory="100" android:title="@string/action_icon_fake" />
+    <item android:icon="@drawable/action_force_stop" android:id="@id/action_force_stop" android:visible="false" android:orderInCategory="100" android:title="@string/action_force_stop" />
+    <item android:icon="@drawable/action_app_clean" android:id="@id/action_clean" android:visible="false" android:orderInCategory="100" android:title="@string/action_clean" />
+    <item android:icon="@drawable/action_uninstall" android:id="@id/action_uninstall" android:visible="false" android:orderInCategory="100" android:title="@string/action_uninstall" />
+    <item android:icon="@drawable/action_app_show_hide" android:id="@id/action_app_hide_show" android:visible="false" android:orderInCategory="100" android:title="@string/action_app_show" />
+    <item android:icon="@drawable/action_switch_clone" android:id="@id/action_clone_mode" android:visible="false" android:orderInCategory="100" android:title="@string/action_switch_clone" />
+    <item android:icon="@drawable/action_repair" android:id="@id/action_auto_fix" android:visible="false" android:orderInCategory="100" android:title="@string/action_auto_fix" />
+    <item android:icon="@drawable/action_app_note" android:id="@id/action_note" android:visible="false" android:orderInCategory="100" android:title="@string/action_note" />
+    <item android:icon="@drawable/action_clone_next" android:id="@id/action_clone_next" android:visible="false" android:orderInCategory="100" android:title="@string/action_clone_next" />
+</menu>

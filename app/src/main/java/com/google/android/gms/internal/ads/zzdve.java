@@ -1,0 +1,8 @@
+package com.google.android.gms.internal.ads;
+
+/** No-op facade for stripped ads SDK (nested values are estimated compile-time constants). */
+public class zzdve {
+    public static final int FLICK = 0;
+    public static final int NONE = 0;
+    public static final int SHAKE = 0;
+}

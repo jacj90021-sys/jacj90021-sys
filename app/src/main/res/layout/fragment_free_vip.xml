@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="layout/fragment_free_vip_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/bannerContainer" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:elevation="1.0dip" />
+    <Button android:id="@id/redeem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="32.0dip" android:text="@string/banner_vip_redeem" android:layout_alignParentBottom="true" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" />
+    <androidx.core.widget.NestedScrollView android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/redeem" android:layout_below="@id/bannerContainer">
+        <LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/margin_normal" android:paddingEnd="@dimen/margin_normal">
+            <androidx.cardview.widget.CardView android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" app:cardCornerRadius="@dimen/margin_micro" app:contentPadding="@dimen/margin_small">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/banner_coin_prefix" />
+                        <TextView android:textStyle="bold" android:id="@id/coin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/margin_large" android:text="0" />
+                        <TextView android:gravity="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/banner_vip_expire_time_tag" android:layout_weight="1.0" />
+                        <TextView android:id="@id/vipStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_marginEnd="8.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                        <TextView android:textColor="?android:textColorSecondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/banner_vip_guide" android:lineSpacingExtra="4.0sp" />
+                        <Button android:layout_gravity="end|bottom" android:id="@id/goWatch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="@string/banner_gowatch" style="?borderlessButtonStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:elevation="0.0dip" app:contentPadding="8.0dip">
+                <RadioGroup android:id="@id/vipGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

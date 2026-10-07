@@ -1,0 +1,11 @@
+package com.cmaster.cloner;
+
+/* compiled from: r8-map-id-b6a76c1f47a189ff549f65e3bd043bd70b1794641f7a8effd31f0ac437af7687 */
+/* loaded from: classes.dex */
+public final class z00 implements y00 {
+    public final a10[] OooO00o;
+
+    public z00(a10[] a10VarArr) {
+        this.OooO00o = a10VarArr;
+    }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_mode" android:orderInCategory="100" android:title="安装模式" app:showAsAction="never" />
+    <item android:id="@id/action_assist" android:orderInCategory="100" android:title="辅包模式" app:showAsAction="never" />
+    <item android:id="@id/action_settings" android:visible="false" android:orderInCategory="100" android:title="设置" app:showAsAction="never" />
+    <item android:id="@id/action_privacy_settings" android:visible="false" android:orderInCategory="100" android:title="Privacy Settings" app:showAsAction="never" />
+    <item android:id="@id/action_install_gms" android:visible="false" android:orderInCategory="100" android:title="Install Google Suite" app:showAsAction="never" />
+    <item android:id="@id/action_app_visible" android:orderInCategory="100" android:title="@string/show_hidden_apps" app:showAsAction="never" />
+    <item android:id="@id/action_remove_ads" android:visible="true" android:orderInCategory="100" android:title="@string/title_remove_ads" app:showAsAction="never" />
+    <item android:icon="@drawable/ic_search" android:id="@id/action_search" android:visible="true" android:orderInCategory="100" android:title="Search" app:showAsAction="always" />
+    <item android:icon="@drawable/action_clear_all_apps" android:id="@id/action_force_stop_all" android:visible="true" android:orderInCategory="100" app:showAsAction="always" />
+    <item android:icon="@drawable/action_no_ads" android:id="@id/action_remove_ads_icon" android:visible="true" android:orderInCategory="100" android:title="@string/title_remove_ads" app:showAsAction="always" />
+    <item android:icon="@drawable/action_qrcode" android:id="@id/action_qrcode_scan_top" android:visible="true" android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@id/action_connect_us" android:orderInCategory="100" android:title="@string/title_connect" app:showAsAction="never" />
+    <item android:id="@id/action_about_us" android:orderInCategory="100" android:title="@string/title_about" app:showAsAction="never" />
+    <item android:id="@id/action_backup" android:visible="true" android:orderInCategory="100" android:title="Backup" app:showAsAction="never" />
+    <item android:id="@id/action_full_backup" android:visible="true" android:orderInCategory="100" android:title="FullBackup" app:showAsAction="never" />
+    <item android:id="@id/action_restore" android:visible="true" android:orderInCategory="100" android:title="Restore" app:showAsAction="never" />
+    <item android:id="@id/action_remove_gms" android:visible="false" android:orderInCategory="100" android:title="Remove all GMS" app:showAsAction="never" />
+    <item android:id="@id/action_qrcode_scan" android:visible="false" android:orderInCategory="100" android:title="@string/action_qrcode_scan" app:showAsAction="never" />
+</menu>
